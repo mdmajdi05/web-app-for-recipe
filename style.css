@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+
+}
+.bh {
+    margin-top:50px ;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 20px;
+    color: rgb(16, 17, 17);
+}
+header nav {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index: 1; */
+    background-color: antiquewhite;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    border-radius: 20px;
+    position: sticky;
+    top: 2px;
+}
+
+
+header nav h1 {
+
+    font-size: 50px;
+
+
+}
+
+header nav form {
+    display: flex;
+    justify-content: center;
+
+}
+
+header nav h1:hover {
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+
+input[type=text] {
+    margin-right: 10px;
+}
+
+input[type=text],
+.nav button {
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+input[type=text]:hover {
+    background-color: brown;
+    color: white;
+}
+
+.nav button {
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+
+.nav button:hover {
+    background-color: deeppink;
+    color: white;
+}
+
+
+
+.footer {
+    display: none;
+    text-align: center;
+    background-color: antiquewhite;
+    width: 100%;
+    border-radius: 10px;
+    position: sticky;
+    top: 100%;
+
+}
+/* popdiv   */
+.mainpop{
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+.mainpop ul{
+    padding-left: 50px;
+}
+.mainpop::-webkit-scrollbar{
+    width: 10px;
+}
+.mainpop::-webkit-scrollbar-thumb{
+    background-color: rgba(229, 16, 194, 0.498);
+    border-radius: 20px;
+}
+.popdiv{
+    border: 10px solid rgba(60, 74, 179, 0.244);
+    display: none;
+    background-color: #7d7892e2;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    width: 70%;
+    color: #000;
+    border-radius: 20px;
+}
+.popdiv h3{
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+}
+.closebtn {
+    box-shadow: 2px 2px 10px red;
+    float: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: red;
+    border: none;
+    transform: scale(1.9);
+}
+/* cards css */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.card {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(206, 210, 210);
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 1dvb rgb(117, 150, 150);
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    background-color: rgb(232, 33, 172);
+    /* width: 350px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 1dvb rgb(182, 185, 185);
+    z-index: 1; */
+    transform: scale(1.09);
+}
+
+
+.card img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 2px solid rgb(252, 252, 252);
+    margin: 4px 2px 0px;
+    height: 60%;
+    width: auto;
+    background-color: #76035d;
+    cursor: pointer;
+    object-fit: fill;
+    margin-bottom: 10px;
+}
+
+
+.card h3 {
+    text-align: center;
+}
+
+.card p {
+    overflow: hidden;
+    text-align: center;
+    padding: 5px;
+    height: 56px;
+}
+
+.card button {
+    /* overflow: hidden; */
+    margin: 7px auto;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.card a {
+    text-decoration: none;
+    color: #000;
+}
+
+.card fa-solid fa-square-xmark fa-beat fa-2xl, button:hover {
+    background-color: red;
+    color: white;
+    padding: auto;
+    margin: 7px  auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px red;
+    cursor: pointer;
+    transform: scale(1.2);
+}
