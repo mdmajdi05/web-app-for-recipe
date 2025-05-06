@@ -1,3 +1,3 @@
 # web-app-for-recipe
  website-link:- 
-jmfoodies.netlify.app
+https://jmfoodies.netlify.app
